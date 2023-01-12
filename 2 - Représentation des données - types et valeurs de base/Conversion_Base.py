@@ -1,0 +1,20 @@
+base = int(input("Choisissez la base 2, 10 ou 16: "))
+nbr = input("Donnez un nombre, de la base choisis précédement, à convertir: ")
+if base==2:
+    decimal=int(nbr, 2)
+    hexa=hex(decimal)
+    print("Votre nombre en base 2:", nbr)
+    print("Votre nombre en base 10:", decimal)
+    print("Votre nombre en base 16:", hexa)
+elif base==10:
+    binaire=bin(int(nbr))
+    hexa=hex(int(nbr))
+    print("Votre nombre en base 2:", binaire)
+    print("Votre nombre en base 10:", nbr)
+    print("Votre nombre en base 16:", hexa)
+elif base==16:
+    decimal=int(nbr, 16)
+    binaire=bin(decimal)
+    print("Votre nombre en base 2:", binaire)
+    print("Votre nombre en base 10:", decimal)
+    print("Votre nombre en base 16:", nbr)

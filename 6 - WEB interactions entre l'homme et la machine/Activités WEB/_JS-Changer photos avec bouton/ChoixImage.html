@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>NSI à Jean Moulin</title>
+	<link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+		</header>
+		<div class="container-main">
+			<nav>
+			</nav>
+			<main>
+				<h1>EAU :</h1>
+				<form>
+					<input type='radio' name='choice' value='lac' id="choix1">Lac
+					<input type='radio' name='choice' value='rivière' id="choix2">Rivière
+					<input type='button' name='bouton' value='Voir la photo' onClick='changerPhoto()'>
+				</form>
+				<br>
+				<img src="img/lac.jpg" name="image" id="image"/>
+			</main>
+			<aside>
+			</aside>
+		</div>	
+		<footer>
+		</footer>
+		<script>
+			function changerPhoto(){
+				if (document.getElementById('choix1').checked){
+					var choix=document.getElementById('choix1').value
+					document.getElementById('image').src= "img/"+choix+".jpg";
+				} else {
+					var choix=document.getElementById('choix2').value
+					document.getElementById('image').src="img/"+choix+".jpg";
+				}
+			}
+		</script>
+  </body>
+</html>
