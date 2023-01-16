@@ -4,6 +4,16 @@ header{
 	background-color: #00ff00;
 }
 
+.header-centre{
+	background-color: #25b900;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-top: 20px;
+	margin-bottom: 45px;
+}
+
 .container-header{
     display: flex;
     flex-direction: row;
