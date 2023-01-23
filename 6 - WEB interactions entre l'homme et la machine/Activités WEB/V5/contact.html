@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>NSI à Jean Moulin</title>
+	<link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+		<!-- En-tête -->
+		<header class="page-header">
+			<div class="container-header">
+				<div class="header-gauche">
+					<!--  mettre à gauche -->
+					<img id="menubutton" height="50" src="../img/bouton-menu.svg" alt="Menu" style="padding-right: 10px" onclick="openNav()">
+					<a href="index.html"><img height="100" src="../img/logoJM.png" alt="Logo Jean Moulin"></a>
+				</div>
+				<div class="header-centre">
+					<!--  mettre au centre -->
+					<h1>NSI à Jean Moulin</h1>
+					<h2>Numérique et Sciences Informatiques</h2>
+				</div>
+				<div class="header-droite">
+					<!-- mettre à droite -->
+					<form id="form-search" method="post" action="./search.html">
+						<input type="search" id="site-search" name="recherche-site" placeholder="Recherche">
+						<button type="submit" id="button-search"><img id="searchButtonImg" height="20" src="../img/loupe.svg" alt="Recherche"></button>
+					</form>
+				</div>
+			</div>
+		</header>
+		<div class="container-main">
+		<!-- Navigation -->
+			<nav>
+				<div  id="navigation" class="container-nav">
+					<ul>
+						<li><a href="presentation.html">Présentation</a></li>
+						<li class="deroulant"><a href="cours.html">Cours</a>
+							<ul class="sous-menu">
+								<li><a href="1NSI.html">1<sup>ère</sup> NSI</a></li>
+								<li><a href="TNSI.html">T<sup>ale</sup> NSI</a></li>								
+							</ul>
+						</li>
+						<li><a href="activites.html">Activités</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+		<!-- Contenu principal -->
+			<main>
+				<h1> Contact</h1>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6802.898680869486!2d-0.5482766121317978!3d47.49214300350286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sfr!2sfr!4v1609168476507!5m2!1sfr!2sfr" 
+					width="1000" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>				<p>
+					Lycée Jean Moulin<br>
+					1 Place Jean Moulin<br>
+					49002 ANGERS CEDEX 01<br>
+					02 41 96 63 60<br>
+					<a href="mailto:ce.0492123s@ac-nantes.fr">ce.0492123s@ac-nantes.fr</a>
+				</p>
+				
+				<h1> Formulaire </h1>
+				<form action="./resultat.html" method="get" id="formulaireContact" class="fomulaireContact">
+					<div id="identité">
+						<h2>Identité</h2>
+						<fieldset>
+						<legend>Sexe :</legend>
+							<label for="Monsieur" class="shortLabel">M.</label><input type="radio" name="sexe" id="Monsieur" value="Monsieur" required> 
+							<label for="Madame" class="shortLabel">Mme.</label><input type="radio" name="sexe" id="Madame" value="Madame" required> 
+						</fieldset>
+						<label for="nom" class="shortLabel">Nom: </label>
+						<input type="text" name="nom" id="nom" required> <br>
+						<label for="prenom" class="shortLabel">Prénom: </label>
+						<input type="text" name="prenom" id="prenom" required> <br>
+						<label for="datenaissance" class="shortLabel">Date de naissance: </label>
+						<input type="date" name="datenaissance" id="datenaissance" required> <br>
+						<label for="adressemail" class="shortLabel">Adresse e-mail: </label>
+						<input type="email" name="adressemail" id="adressemail" required> <br>
+						<label for="motdepasse" class="shortLabel">Mot de passe: </label>
+						<input type="password" name="motdepasse" id="motdepasse" required> <br>
+						<label for="diplome"  class="shortLabel">Diplôme : </label>
+						<select id="diplome" name="diplome" >
+							<option>Sans diplôme
+							<option>Brevet
+							<option>Baccalauréat
+							<option>Bac +2
+							<option>Bac +3
+							<option>Bac +5
+							<option>Bac +8
+						</select>
+					</div>
+						<h2>Informations</h2>
+					<div id="infos">
+						<fieldset>
+						<legend>Veuillez sélectionner vos spécialités :</legend>
+						<div>
+							<input type="checkbox" name="specialite" id="HG" value="Histoire-Géographie, Géopolitique et Sciences Politiques"> Histoire-Géographie, Géopolitique et Sciences Politiques 
+						</div>
+						<div>
+							<input type="checkbox" name="specialite" id="SES" value="Sciences Économiques et Sociales"> Sciences Économiques et Sociales
+						</div>
+						<div>
+							<input type="checkbox" name="specialite" id="HLP" value="Humanités, Littérature et Philosophie"> Humanités, Littérature et Philosophie
+						</div>
+						<div>
+							<input type="checkbox" name="specialite" id="LLCE" value="Langues, Littératures et Cultures Étrangères"> Langues, Littératures et Cultures Étrangères
+						</div>
+						<div>
+							<input type="checkbox" name="specialite" id="LLCA" value="Littérature et Langues et Cultures de l’Antiquité"> Littérature et Langues et Cultures de l’Antiquité
+						</div>
+						<div>
+							<input type="checkbox" name="specialite" id="Maths" value="Mathématiques"> Mathématiques
+						</div>
+						<div>
+							<input type="checkbox" name="specialite" id="PC" value="Physique-Chimie"> Physique-Chimie
+						</div>
+						<div>
+							<input type="checkbox" name="specialite" id="SVT" value="Sciences de la Vie et de la Terre"> Sciences de la Vie et de la Terre
+						</div>
+						<div>
+							<input type="checkbox" name="specialite" id="NSI" value="Numérique et Sciences Informatiques" checked> Numérique et Sciences Informatiques
+						</div>
+						<div>
+							<input type="checkbox" name="specialite" id="SI" value="Sciences de l’Ingénieur"> Sciences de l’Ingénieur
+						</div>
+						<div>
+							<input type="checkbox" name="specialite" id="Arts" value="Arts"> Arts
+						</div>
+						</fieldset>
+					</div>
+						<h2>Message</h2>
+					<div id="Message">
+						<label for="message">Votre message : </label><textarea name="message" id="message" rows="10" cols="100"> </textarea><br>
+						<input type="submit" id="envoyer" name="envoyer" value="envoyer">
+						<input type="reset" id="reinitialiser" name="reinitialiser" value="réinitialiser">
+					</div>
+				</form>
+			</main>
+		<!-- Informations annexes (réseaux sociaux) -->
+			<aside>
+				<div class="container-aside">
+					<ul>
+						<li><a href="./facebook.html"><img width="50" src="../img/logo-facebook.png" alt="Facebook"></a></li>
+						<li><a href="./instagram.html"><img width="50" src="../img/logo-instagram.png" alt="Instagram"></a></li>
+						<li><a href="./twitter.html"><img width="50" src="../img/logo-twitter.svg" alt="Twitter"></a></li>
+					</ul>		
+				</div>
+			</aside>
+		</div>	
+		<!-- Bas de page -->
+		<footer>
+			<div class="container-footer">
+				<div class="copyright">
+					Copyright &copy;
+				</div>
+				<div class="legal">
+					<ul>
+						<li>Politique de confidentialité </li>
+						<li>Politique d'utilisation des cookies </li>
+						<li>Mentions légales </li>
+						<li>Conditions générales d'utilisation </li>
+					</ul>			
+				</div>
+				<div class="author">
+					Classe de NSI
+				</div>			
+			</div>
+		</footer>
+		
+	  <script>
+		//Script pour menu déroulant
+		navopen=0;
+
+		function openNav() {
+		var menubutton = document.getElementById("menubutton");
+		  if (navopen==0){
+			document.getElementById("navigation").style.width = "200px";
+			menubutton.setAttribute("src", "../img/bouton-menu-inverted.svg");
+			navopen=1;
+		  }
+		  else{
+			document.getElementById("navigation").style.width = "0px";
+			menubutton.setAttribute("src", "../img/bouton-menu.svg");
+			navopen=0;
+		  }
+		}
+		</script>
+  </body>
+
+</html>

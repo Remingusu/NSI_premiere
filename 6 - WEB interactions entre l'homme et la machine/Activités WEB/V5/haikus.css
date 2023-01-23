@@ -1,0 +1,17 @@
+main{
+	width:1000px;
+	background-image: url("./img/sakura.png");
+	background-size: cover;
+}
+
+main h1{
+	font-family:Brush Script Std;
+	font-size: 72pt;
+}
+
+.haiku{
+	font-family:Brush Script Std;
+	font-size: 36pt;
+	text-shadow:1px 1px 5px #333333;
+	color: black;
+}
