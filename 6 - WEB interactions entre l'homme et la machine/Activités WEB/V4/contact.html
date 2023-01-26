@@ -58,7 +58,83 @@
 				</p>
 				
 				<h1> Formulaire </h1>
-				
+				<form id="formulaire-contact" class="formulaire-contact">
+					<h3>Identité</h3>
+					<fieldset>
+						<legend>Sexe:</legend>
+						<div>
+							<input type="radio" id="monsieur" name="sexe" value="Monsieur" checked>
+							<label for="monsieur">Mr.</label>
+						</div>
+						<div>
+							<input type="radio" id="madame" name="sexe" value="Madame">
+							<label for="madame">Mme.</label>
+						</div>
+					</fieldset>
+					<input type="text" name="nom" placeholder="Nom"><br>
+					<input type="text" name="prenom" placeholder="Prénom"><br>
+					<input type="date" name="birthday" placeholder="Date de naissance"><br>
+					<input type="text" name="adresse-email" placeholder="Adresse e-mail"><br>
+					<input type="password" name="mdp" placeholder="Mot de Passe"><br>
+					<label for="diplome">Diplôme: </label>
+					<select name="diplome" id="diplome">
+						<option value="Sans Diplôme">Sans diplôme</option>
+						<option value="Brevet des collèges">Brevet des collèges</option>
+						<option value="Baccalauréat">Baccalauréat</option>
+					</select>
+					<h3>Informations</h3>
+					<fieldset>
+						<legend>Veuillez sélectionner vos spécialités:</legend>
+						<div>
+							<input type="checkbox" id="HGGSP" name="specialites" value="Histoire-Géographie, Géopolitique et Sciens Politiques">
+							<label for="HGGSP">Histoire-Géographie, Géopolitique et Sciens Politiques</label>
+						</div>
+						<div>
+							<input type="checkbox" id="SES" name="specialites" value="Sciences Economiques et Sociales">
+							<label for="SES">Sciences Economiques et Sociales</label>
+						</div>
+						<div>
+							<input type="checkbox" id="HLP" name="specialites" value="Humanitiés, Littérature et Philosophie">
+							<label for="HLP">Humanitiés, Littérature et Philosophie</label>
+						</div>
+						<div>
+							<input type="checkbox" id="LLCE" name="specialites" value="Langues, Littératures et Cultures Etrangères">
+							<label for="LLCE">Langues, Littératures et Cultures Etrangères</label>
+						</div>
+						<div>
+							<input type="checkbox" id="LLCA" name="specialites" value="Littérature, Langues et Cultures de l'Antiquité">
+							<label for="LLCA">Littérature, Langues et Cultures de l'Antiquité</label>
+						</div>
+						<div>
+							<input type="checkbox" id="Maths" name="specialites" value="Mathématiques">
+							<label for="Maths">Mathématiques</label>
+						</div>
+						<div>
+							<input type="checkbox" id="PC" name="specialites" value="Physique-Chimie">
+							<label for="PC">Physique-Chimie</label>
+						</div>
+						<div>
+							<input type="checkbox" id="SVT" name="specialites" value="Sciences de la Vie et de la Terre">
+							<label for="SVT">Sciences de la Vie et de la Terre</label>
+						</div>
+						<div>
+							<input type="checkbox" id="NSI" name="specialites" value="Numérique et Sciences de l'Informatiques">
+							<label for="NSI">Numérique et Sciences de l'Informatiques</label>
+						</div>
+						<div>
+							<input type="checkbox" id="SI" name="specialites" value="Sciences de l'Ingénieur">
+							<label for="SI">Sciences de l'Ingénieur</label>
+						</div>
+						<div>
+							<input type="checkbox" id="Art" name="specialites" value="Arts">
+							<label for="Art">Arts</label>
+						</div>
+					</fieldset>
+					<h3>Message</h3>
+					<textarea name="message" cols="124.5" rows="20" size="100" placeholder="Votre Message"></textarea><br>
+					<input type="submit" formaction="./resultat.html" formmethod="get">
+					<input type="reset">
+				</form>
 			</main>
 		<!-- Informations annexes (réseaux sociaux) -->
 			<aside>

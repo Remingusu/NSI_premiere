@@ -84,7 +84,48 @@
 		
 	  <script>
 		//Script Résultat
-	
+		const queryString = window.location.search;
+		console.log(queryString);
+		const urlParams = new URLSearchParams(queryString);
+
+		var contenu = "";
+		contenu += urlParams.get('sexe');
+		contenu += " ";
+		contenu += urlParams.get('nom');
+		contenu += " ";
+		contenu += urlParams.get('prenom');
+		contenu += "<br>";
+
+		contenu += "Né le ";
+		contenu += urlParams.get('birthday');
+		contenu += "<br>";
+
+		contenu += "Dernier diplôme obtenu: ";
+		contenu += urlParams.get('diplome');
+		contenu += '<br>';
+
+		contenu += "Mot de passe: ";
+		contenu += urlParams.get('mdp');
+		contenu += '<br>';
+
+		contenu += "Contact: ";
+		contenu += urlParams.get('adresse-email');
+		contenu += '<br><br>';
+
+		const specialites = urlParams.getAll('specialites');
+			contenu += "Spécialités : <ul>";
+			for (let i=0; i<specialites.length; i++){
+				resultat.innerHTML += "<li>" + specialites[i] + "</li>";	
+			}
+			contenu += "</ul>";
+
+		contenu += "Message: ";
+		contenu += '<br>';
+		contenu += '<p>'
+		contenu += urlParams.get('message');
+		contenu += '</p>'
+		var result = document.getElementById('resultat')
+		result.innerHTML += contenu;
 	
 		//Script pour menu déroulant	  
 		navopen=0;
