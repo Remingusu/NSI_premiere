@@ -15,3 +15,10 @@ main h1{
 	text-shadow:1px 1px 5px #333333;
 	color: black;
 }
+
+.haikuOver{
+	font-family: Brush Script Std;
+	font-size: 36pt;
+	text-shadow:5px 5px 5px #000000;
+	color: red;
+}
