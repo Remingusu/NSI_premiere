@@ -2,7 +2,7 @@
 # Il y aura à chaque fois un code facile à faire.
 
 """ Code1* :
-Créez un dictionnaire qui donne le nombre d'occurrence de chaque nombre présent dans la liste.
+Créez un dictionnaire qui donne le nombre d'occurrences de chaque nombre présent dans la liste.
 Vous pouvez utiliser count() et max()
 Exemple :
 Entrée : L=[3,2,7,1,3,3,4,5,6,3,7,2]
@@ -10,7 +10,7 @@ Sortie : D={0:0,1:1,2:2,3:4,4:1,5:1,6:1,7:2}
 """
 L = [3, 2, 7, 1, 3, 3, 4, 5, 6, 3, 7, 2]
 dico = {}
-for i in range(max(L)):
+for i in range(max(L)+1):
     dico[i] = L.count(i)
 print(dico)
 
