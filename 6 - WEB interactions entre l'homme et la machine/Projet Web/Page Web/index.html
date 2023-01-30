@@ -1,20 +1,227 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Formula Ouest</title>
-    </head>
-    <body>
-        <header class="header">
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>NSI à Jean Moulin</title>
+	<link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+		<header class="page-header">
+			<div class="container-header">
+				<div class="header-gauche">
+					<img id="menubutton" height="50" src="./image/fleche_ico.png" alt="Menu" style="padding-right: 10px" onclick="openNav()">
+					<a href="index.html"><img height="100" src="../img/logoJM.png" alt="Logo Jean Moulin"></a>
+				</div>
+				<div class="header-centre">
+					Titre
+				</div>
+				<div class="header-droite">
+					<!-- mettre à droite -->
+					<form id="form-search" method="post" action="./search.html">
+						<label for="site-search"> </label> <input type="search" id="site-search" name="recherche-site" placeholder="Recherche">
+						<button type="submit" id="button-search"><img id="searchButtonImg" height="20" src="../img/loupe.svg" alt="Recherche"></button>
+					</form>
+				</div>
+			</div>
+		</header>
+		<div class="container-main">
+		<!-- Navigation -->
+			<nav>
+				<div  id="navigation" class="container-nav">
+					<ul>
+						<li><a href="presentation.html">Présentation</a></li>
+						<li class="deroulant"><a href="cours.html">Cours</a>
+							<ul class="sous-menu">
+								<li><a href="1NSI.html">1<sup>ère</sup> NSI</a></li>
+								<li><a href="TNSI.html">T<sup>ale</sup> NSI</a></li>								
+							</ul>
+						</li>
+						<li><a href="activites.html">Activités</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+			<main>
+				<fieldset>
+					<legend>
+						<img height="11.5" src="./image/flag/bahrain_flag.png" alt="Drapeau de Bahraïn">
+						Bahraïn
+					</legend>
+					Dimanche 5 mars, 16:00
+				</fieldset>
+				<fieldset>
+					<legend>
+						<img height="11.5" src="./image/flag/saudi_arabia_flag.png" alt="Drapeau d'Arabie Saoudite">
+						Arabie Saoudite
+					</legend>
+					Dimanche 19 mars, 18:00
+				</fieldset>
+				<fieldset>
+					<legend>
+						<img height="11.5" src="./image/flag/australia_flag.png" alt="Drapeau d'Australie">
+						Australie
+					</legend>
+					Dimanche 2 avril, 07:00
+				</fieldset>		
+				<fieldset>
+					<legend>
+						<img height="11.5" src="./image/flag/azerbaijan_flag.png" alt="Drapeau d'Azebaïdajan">
+						Azerbaïdjan
+					</legend>
+					Dimanche 30 Avril, 13:00
+				</fieldset>
+				<fieldset>
+					<legend>
+						<img height="11.5" src="./image/flag/miami_flag.png" alt="Drapeau de Miami">
+						Miami
+					</legend>
+					Dimanche 7 Mai, 21h30
+				</fieldset>
+				<fieldset>
+					<legend>
+						<img height="11.5" src="./image/flag/emilia-romagna-flag.png" alt="Drapeau d'Emilie-Romagne">
+						Emilie-Romagne
+					</legend>
+					Dimanche 21 Mai, 15:00
+				</fieldset>
+				<fieldset>
+					<legend>
+						<img height="11.5" src="./image/flag/monaco_flag.png" alt="Drapeau de Monaco">
+						Monaco
+					</legend>
+					Dimanche 28 Mai, 15:00
+				</fieldset>
+				<fieldset>
+					<legend>
+						<img height="11.5" src="./image/flag/spain_flag.png" alt="Drapeau d'Espagne">
+						Espagne
+					</legend>
+					Dimanche 4 Juin, 15:00
+				</fieldset>
+				<fieldset>
+					<legend>
+						<img height="11.5" src="./image/flag/canada_flag.png" alt="Drapeau de Canada">
+						Canada
+					</legend>
+					Dimanche 18 Jui, 20:00
+				</fieldset>
+				<fieldset>
+					<legend>
+						<img height="11.5" src="./image/flag/austria_flag.png" alt="Drapeau d'Autriche">
+						Autriche
+					</legend>
+					Dimanche 2 Juillet, 15:00
+				</fieldset>
+				<fieldset>
+					<legend>
+						<img height="11.5" src="./image/flag/ru_flag.png" alt="Drapeau de la Grande-bretagne">
+						Grande-Bretagne
+					</legend>
+					Dimanche 9 Juillet, 16:00
+				</fieldset>
+				<fieldset>
+					<legend>
+						<img height="11.5" src="./image/flag/hungary_flag.png" alt="Drapeau d'Hongire">
+						Hongrie
+					</legend>
+					Dimanche 23 Juillet, 15:00
+				</fieldset>
+				<fieldset>
+					<legend>
+						<img height="11.5" src="./image/flag/belgium_flag.png" alt="Drapeau de Belgique">
+						Belgique
+					</legend>
+					Dimanche 30 Juillet, 15:00
+				</fieldset>
+				<fieldset>
+					<legend>
+						<img height="11.5" src="./image/flag/netherlands_flag.png" alt="Drapeau du Pays-Bas">
+						Pays-Bas
+					</legend>
+					Dimanche 27 Août, 15:00
+				</fieldset>
+				<fieldset>
+					<legend>
+						<img height="11.5" src="./image/flag/italy_flag.png" alt="Drapeau d'Italie">
+						Italie
+					</legend>
+					Dimanche 3 Septembre, 15:00
+				</fieldset>
+				<fieldset>
+					<legend>
+						<img height="11.5" src="./image/flag/singapore_flag.png" alt="Drapeau de Singapour">
+						Singapour
+					</legend>
+					Dimanche 17 Septembre, 14:00
+				</fieldset>
+				<fieldset>
+					<legend>
+						<img height="11.5" src="./image/flag/japan_flag.png" alt="Drapeau du Japon">
+						Japon
+					</legend>
+					Dimanche 24 Septembre, 07:00
+				</fieldset>
+				<fieldset>
+					<legend>
+						<img height="11.5" src="./image/flag/qatar_flag.png" alt="Drapeau du Qatar">
+						Qatar
+					</legend>
+					Dimanche 8 Octobre, 16:00
+				</fieldset>
+				<fieldset>
+					<legend>
+						<img height="11.5" src="./image/flag/usa_flag.png" alt="Drapeau des Etats-Unis">
+						Etats-Unis
+					</legend>
+					Dimanche 22 Octobre, 21:00
+				</fieldset>
+				<fieldset>
+					<legend>
+						<img height="11.5" src="./image/flag/mexico_flag.png" alt="Drapeau du Mexique">
+						Mexique
+					</legend>
+					Dimanche 29 Octobre, 21:00
+				</fieldset>
+				<fieldset>
+					<legend>
+						<img height="11.5" src="./image/flag/brazil_flag.png" alt="Drapeau du Brésil">
+						Brésil
+					</legend>
+					Dimanche 5 Novembre, 18:00
+				</fieldset>
+				<fieldset>
+					<legend>
+						<img height="11.5" src="./image/flag/las_vegas_flag.png" alt="Drapeau de Las Vegas">
+						Las Vegas
+					</legend>
+					Samedi 18 Novembre, 07:00
+				</fieldset>
+				<fieldset>
+					<legend>
+						<img height="11.5" src="./image/flag/arbar_emirates_flag.png" alt="Drapeau d'Abou Dabi">
+						Abou Dhabi
+					</legend>
+					Dimanche 26 Novembre, 14:00
+				</fieldset>
+			</div>
 
-        </header>
-        <div class="container_main">
-            <main>
+	  <script>
+		navopen=0;
 
-            </main>
-            <aside>
+		function openNav() {
+		var menubutton = document.getElementById("menubutton");
+		  if (navopen==0){
+			document.getElementById("navigation").style.width = "200px";
+			menubutton.setAttribute("src", "../img/bouton-menu-inverted.svg");
+			navopen=1;
+		  }
+		  else{
+			document.getElementById("navigation").style.width = "0px";
+			menubutton.setAttribute("src", "../img/bouton-menu.svg");
+			navopen=0;
+		  }
+		}
+		</script>
+  </body>
 
-            </aside>
-        </div>
-    </body>
 </html>
