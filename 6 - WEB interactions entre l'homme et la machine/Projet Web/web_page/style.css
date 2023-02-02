@@ -1,0 +1,39 @@
+body, html {
+    padding: 0px 0px 0px 0px;
+}
+
+body {
+    background-color: aqua;
+    margin: 0px;
+}
+
+header {
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.header_container{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+}
+
+.header_nav_button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header_title_logo{
+    text-align: center;
+}
+
+.main_container {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+nav {}
