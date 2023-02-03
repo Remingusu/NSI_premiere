@@ -1,39 +1,40 @@
-body, html {
-    padding: 0px 0px 0px 0px;
+body {
+    background-color: #CCCCCC;
+    margin: 0 auto;
 }
 
-body {
-    background-color: aqua;
-    margin: 0px;
+.top_screen {
+    height: 500px;
+    width: 100%;
+    background-color: #111111;
+    background-image: url('Images/banner_acceuil.jpg');
+    background-size: cover;
+}
+
+.main_title {
+    padding-top: 25px;
+    padding-left: 15px;
+    color: #FF2223;
+    font-size:35px;
+    font-family: Georgia;
 }
 
 header {
-    position: fixed;
-    height: 100px;
-    width: 100%;
-    border-radius: 10px;
-}
-
-.header_container{
-    background-color: #FFFFFF;
+    background: linear-gradient(-150deg, #FA242A 68%, #550000 70%, #000000 55%);
     display: flex;
-    flex-direction: row;
-}
-
-.header_nav_button {
-    display: flex;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
+    height: 55px;
+    width: 100%;
+    border-bottom-right-radius: 145px;
 }
 
-.header_title_logo{
-    text-align: center;
+nav {
+    background-color: #CC0000;
 }
 
-.main_container {
-    margin-top: 10%;
-    display: flex;
-    flex-direction: row;
+nav ul {
+    list-style: none;
+    text-decoration: none;
+    color: #FFFFFF;
 }
-
-nav {}
