@@ -219,3 +219,80 @@ h2 {
     text-decoration: underline;
     color: #9d0000;
 }
+
+.main_encouragement {
+    display: grid;
+    justify-content: center;
+    min-height: 850px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    margin: 5px 10px 5px 10px;
+}
+
+.top_title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.form_div {
+    padding: 25px 45px 25px 45px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #000000cc;
+    color: white;
+}
+
+input {
+    font-size: 18px;
+    padding: 3px 20px 10px 20px;
+    text-align: center;
+    color: #ffffff;
+    border: hidden;
+    border-bottom: solid #005cb8;
+    background-color: #00000000;
+    border-radius: 10px;
+}
+
+.color_div {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.color_div p {
+    margin: 3px;
+}
+
+.driver_div {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.driver_div p {
+    margin: 10px;
+}
+
+input[type="color"] {
+    padding: 0;
+    width: 55px;
+    height: 55px;
+    border: hidden;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+select {
+    font-size: 17px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+input[type="submit"]{
+    padding-top:10px;
+    margin-top: 30px;
+    border: solid #005cb8;
+    background-color: #00b8b895;
+}
+
+select {
+    background-color: rgba(0, 0, 0);
+}

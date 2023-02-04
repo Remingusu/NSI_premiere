@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formula Ouest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img height="115" src="Images/logo_site.png" alt="Logo_F1">
+        Formula Ouest
+    </header>
+    <div class="nav_bar">
+        <nav>
+            <ul>
+                <li><a href="presentation.html">Présentation</a></li>
+                <li><a href="circuit_list.html">Liste des circuits</a></li>
+                <li><a href="legends.html">Légendes</a></li>
+                <li><a href="rankings.html">Classements</a></li>
+                <li><a href="index.html">Accueil</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main_container">
+        <main>
+            <div class="main_encouragement">
+                <div class="encouragement_div">
+                    <div class="top_title">
+                        <h1>Encouragements</h1>
+                        <h3>Envoyez vos encouragements à votre pilote favori !</h3>
+                    </div>
+                    <div class="form_div">
+                        <form id="formulaire " class="formulaire">
+                            <input type="email" id="email" placeholder="E-Mail" required><br>
+                            <div class="color_div">
+                                <p>Choisissez la couleur du texte:</p>
+                                <input type="color" id="color" required><br>
+                            </div>
+                            <div class="driver_div">
+                                <p>Choisissez votre pilote:</p>
+                                <select name="driver" id="driver_select">
+                                    <option value="Verstappen">Verstappen</option>
+                                    <option value="Leclerc">Leclerc</option>
+                                    <option value="Perez">Perez</option>
+                                    <option value="Russel">Russel</option>
+                                    <option value="Sainz">Sainz</option>
+                                    <option value="Hamilton">Hamilton</option>
+                                    <option value="Norris">Norris</option>
+                                    <option value="Ocon">Ocon</option>
+                                    <option value="Gasly">Gasly</option>
+                                    <option value="Bottas">Bottas</option>
+                                    <option value="Piastri">Piastri</option>
+                                    <option value="Alonso">Alonso</option>
+                                    <option value="Magnussen">Magnussen</option>
+                                    <option value="De Vries">De Vries</option>
+                                    <option value="Stroll">Stroll</option>
+                                    <option value="Hulkenberg">Hulkenberg</option>
+                                    <option value="Tsunoda">Tsunoda</option>
+                                    <option value="Zhou">Zhou</option>
+                                    <option value="Albon">Albon</option>
+                                    <option value="Sargeant">Sargeant</option>
+                                </select><br>
+                            </div>
+                            <input type="text" id="message" placeholder="Vos Encouragements" required><br>
+                            <input type="submit" id="send" value="Envoyer les Encouragements !">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
