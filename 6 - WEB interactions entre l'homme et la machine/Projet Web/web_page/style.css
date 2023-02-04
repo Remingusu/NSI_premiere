@@ -134,7 +134,7 @@ h2 {
 
 .main_rankings, .main_rankings a {
     margin: 5px 35px 5px 35px;
-    background-color: rgba(68, 155, 180, 0.756);
+    background-color: rgba(88, 206, 238, 0.443);
     border-radius: 20px;
     text-align: center;
     display: grid;
@@ -164,7 +164,58 @@ h2 {
 }
 
 .r_2022_div, .r_2023_div {
-    background-color: #00000055;
+    background-color: #00000077;
     border-radius: 15px;
     padding: 23px 10px 23px 10px;
+}
+
+.main_presentation {
+    margin: 5px;
+    background-color: rgba(180, 0, 153, 0.257);
+    border-radius: 15px;
+    display: grid;
+    text-align: center;
+}
+
+.top_presentation {
+    padding: 5px 10px 5px 10px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: rgba(0, 170, 232, 0.649);
+    text-align: center;
+    font-size: 17.5px;
+}
+
+.bottom_presentation {
+    display: flex;
+    justify-content: baseline;
+    font-size: 17.5px;
+}
+
+.regles_div {
+    padding: 5px 10px 5px 10px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: rgba(4, 165, 111, 0.808);
+}
+
+.regles_div li  {
+    padding: 12px;
+}
+
+.pneus_div {
+    padding: 5px 10px 5px 10px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: rgba(4, 165, 111, 0.808);
+}
+
+.pneus_div li {
+    padding: 15px;
+    list-style: decimal;
+}
+
+.pneus_div b {
+    text-decoration: underline;
+    color: #9d0000;
 }
