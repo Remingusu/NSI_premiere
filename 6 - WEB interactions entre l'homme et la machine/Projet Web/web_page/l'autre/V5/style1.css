@@ -129,7 +129,7 @@ main h1{
 }
 
 table,td,th{
-	border  solid black 1px;
+	border:  solid black 1px;
     border-collapse : collapse;
 	text-align: left;
 }
