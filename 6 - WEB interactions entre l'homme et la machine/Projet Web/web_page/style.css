@@ -129,5 +129,42 @@ h1 {
 h2 {
     text-decoration: underline;
     color: #ffcf57;
-    font-size: 25;
+    font-size: 25px;
+}
+
+.main_rankings, .main_rankings a {
+    margin: 5px 35px 5px 35px;
+    background-color: rgba(68, 155, 180, 0.756);
+    border-radius: 20px;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.main_rankings table, td, th {
+    border: solid #000000 1px;
+    text-align: center;
+    padding: 5px 4px 5px 4px;
+}
+
+.main_rankings a {
+    margin: 5px;
+}
+
+.main_rankings h1 {
+    font-size: 35px;
+    margin: 0px 0px 23.45px 0px;
+}
+
+.main_rankings {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.r_2022_div, .r_2023_div {
+    background-color: #00000055;
+    border-radius: 15px;
+    padding: 23px 10px 23px 10px;
 }
