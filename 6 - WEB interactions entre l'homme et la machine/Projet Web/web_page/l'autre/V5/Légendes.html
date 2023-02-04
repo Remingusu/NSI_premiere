@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Site sur la F1</title>
+	<link rel="stylesheet" href="style1.css">
+  </head>
+  <body>
+		<!-- En-tête -->
+		<header class="page-header">
+			<div class="container-header">
+				<div class="header-gauche">
+					<!--  mettre à gauche -->
+					<img id="menubutton" height="50" src="../img/Fleche.png" alt="Menu" style="padding-right: 10px" onclick="openNav()">
+					<a href="index.html"><img height="100" src="../img/logo_f1.png" alt="Logo Jean Moulin"></a>
+				</div>
+				<div class="header-centre">
+					<!--  mettre au centre -->
+					<h1>F1</h1>
+					<h2>Sport Meca</h2>
+				</div>
+				<div class="header-droite">
+					<!-- mettre à droite -->
+					<form id="form-search" method="post" action="./search.html">
+						<input type="search" id="site-search" name="recherche-site" placeholder="Recherche">
+						<button type="submit" id="button-search"><img id="searchButtonImg" height="20" src="../img/loupe.svg" alt="Recherche"></button>
+					</form>
+				</div>
+			</div>
+		</header>
+		<div class="container-main">
+		<!-- Navigation -->
+			<nav>
+				<div  id="navigation" class="container-nav">
+					<ul>
+						<li><a href="presentation.html">Présentation</a></li>
+						<li class="deroulant"><a>Classements</a>
+							<ul class="sous-menu">
+								<li><a href="Classement2022.html">2022</a></li>
+								<li><a href="Classement2023.html">2023</a></li>								
+							</ul>
+						</li>
+						<li><a href="Circuits.html">Circuits</a></li>
+						<li><a href="Légendes.html">Légendes</a></li>
+					</ul>
+				</div>
+			</nav>
+		<!-- Contenu principal -->
+			<main>
+				<h1>Légendes</h1>
+					<h2>Champion en titre : </h2> 
+						<h3> <img src="../img/PaysBas.png"> Max Verstappen</h3>
+						<table>
+							<td> <img height="200"src="../img/Max.jpg" alt="Photo Max"> </td>
+								<td>
+										2 <b>fois Champion du Monde</b>
+									<br>
+										35 <b>Victoires</b>
+									<br>
+										77 <b>Podiums</b>     
+								</td>
+						</table>
+					<h2>Les Légendes de la Formule 1 : </h2>
+						<h3> <img src="../img/RU.png"> Lewis Hamilton (1985)</h3>
+						<table>
+							<td> <img height="200"src="../img/Hamilton.jpg" alt="Photo Lewis"> </td>
+								<td>
+										 7  <b>fois Champion du Monde</b>
+									<br>
+										103 <b>Victoires</b>
+									<br>
+										190 <b>Podiums</b>     
+								</td>
+						</table>
+						<h3> <img src="../img/Allemand.png"> Michael Schumacher (1969)</h3>
+						<table>
+							<td> <img height="125"src="../img/Schumacher.jpg"> </td>
+								<td>
+									7 <b>fois Champion du Monde</b>
+								<br>
+									91 <b>Victoires</b>
+								<br>
+									155 <b>Poduims</b>
+								</td>
+						</table>
+						<h3> <img height="50" src="../img/Argentine.png"> Juan Manuel Fangio (1911-1995)</h3>
+						<table>
+							<td> <img height="175"src="../img/Fangio.jpg" alt="Photo Fangio"> </td>
+								<td>
+										5 <b>fois Champion du Monde</b>
+									<br>
+										24 <b>Victoires</b>
+									<br>
+										35 <b>Podiums</b>     
+								</td>
+						</table>
+						<h3> <img src="../img/France.png"> Alain Prost (1955)</h3>
+						<table>
+							<td> <img height="175"src="../img/Prost.jpg" alt="Photo Alain"> </td>
+								<td>
+										4   <b>fois Champion du Monde</b>
+									<br>
+										51  <b>Victoires</b>
+									<br>
+										106 <b>Podiums</b>     
+								</td>
+						</table>
+						<h3> <img height="50" src="../img/Bresil.png"> Ayrton Senna (1960-1994)</h3>
+						<table>
+							<td> <img height="150"src="../img/Senna.jpg" alt="Photo Senna"> </td>
+								<td>
+										3  <b>fois Champion du Monde</b>
+									<br>
+										41 <b>Victoires</b>
+									<br>
+										80 <b>Podiums</b>     
+								</td>
+						</table>
+						<h3> <img src="../img/RU.png"> Jackie Stewart (1939)</h3>
+						<table>
+							<td> <img height="200"src="../img/Stewart.jpg" alt="Photo Stewart"> </td>
+								<td>
+										3 <b>fois Champion du Monde</b>
+									<br>
+										27 <b>Victoires</b>
+									<br>
+										43 <b>Podiums</b>     
+								</td>
+						</table>
+						<h3> <img src="../img/RU.png"> Jim Clark (1936-1968)</h3>
+						<table>
+							<td> <img height="200"src="../img/Clark.jpg" alt="Photo Clark"> </td>
+								<td>
+										2 <b>fois Champion du Monde</b>
+									<br>
+										25 <b>Victoires</b>
+									<br>
+										35 <b>Podiums</b>     
+								</td>
+						</table>
+						<h3> <img src="../img/Canada.png"> Gilles Villeneuve (1950-1982)</h3>
+						<table>
+							<td> <img height="100"src="../img/Villeneuve.jpg" alt="Photo Villeneuve"> </td>
+								<td>
+										6 <b>Victoires</b>
+									<br>
+										13 <b>Podiums</b>     
+								</td>
+						</table>
+										
+				
+			</main>
+		<!-- Informations annexes (réseaux sociaux) -->
+			<aside>
+				<div class="container-aside">
+					<ul>
+						<li><a href="./facebook.html"><img width="50" src="../img/logo-facebook.png" alt="Facebook"></a></li>
+						<li><a href="./instagram.html"><img width="50" src="../img/logo-instagram.png" alt="Instagram"></a></li>
+						<li><a href="./twitter.html"><img width="50" src="../img/logo-twitter.svg" alt="Twitter"></a></li>
+					</ul>		
+				</div>
+			</aside>
+		</div>	
+		<!-- Bas de page -->
+		<footer>
+			<div class="container-footer">
+				<div class="copyright">
+					Copyright &copy;
+				</div>
+				<div class="legal">
+					<ul>
+						<li>Politique de confidentialité </li>
+						<li>Politique d'utilisation des cookies </li>
+						<li>Mentions légales </li>
+						<li>Conditions générales d'utilisation </li>
+					</ul>			
+				</div>
+				<div class="author">
+					Classe de NSI
+				</div>			
+			</div>
+		</footer>
+		
+	  <script>
+		//Script pour menu déroulant
+		navopen=0;
+
+		function openNav() {
+		var menubutton = document.getElementById("menubutton");
+		  if (navopen==0){
+			document.getElementById("navigation").style.width = "200px";
+			menubutton.setAttribute("src", "../img/FlecheBas.png");
+			navopen=1;
+		  }
+		  else{
+			document.getElementById("navigation").style.width = "0px";
+			menubutton.setAttribute("src", "../img/Fleche.png");
+			navopen=0;
+		  }
+		}
+		</script>
+			
+		
+			
+  </body>
+
+</html>

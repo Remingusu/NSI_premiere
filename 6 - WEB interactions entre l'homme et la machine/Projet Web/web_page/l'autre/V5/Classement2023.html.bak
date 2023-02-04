@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>NSI à Jean Moulin</title>
+	<link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+		<!-- En-tête -->
+		<header class="page-header">
+			<div class="container-header">
+				<div class="header-gauche">
+					<!--  mettre à gauche -->
+					<img id="menubutton" height="50" src="../img/bouton-menu.svg" alt="Menu" style="padding-right: 10px" onclick="openNav()">
+					<a href="index.html"><img height="100" src="../img/logo_f1.png" alt="Logo F1"></a>
+				</div>
+				<div class="header-centre">
+					<!--  mettre au centre -->
+					<h1>F1</h1>
+					<h2>Sport Meca</h2>
+				</div>
+				<div class="header-droite">
+					<!-- mettre à droite -->
+					<form id="form-search" method="post" action="./search.html">
+						<label for="site-search"> </label> <input type="search" id="site-search" name="recherche-site" placeholder="Recherche">
+						<button type="submit" id="button-search"><img id="searchButtonImg" height="20" src="../img/loupe.svg" alt="Recherche"></button>
+					</form>
+				</div>
+			</div>
+		</header>
+		<div class="container-main">
+		<!-- Navigation -->
+			<nav>
+				<div  id="navigation" class="container-nav">
+					<ul>
+						<li><a href="presentation.html">Présentation</a></li>
+						<li class="deroulant"><a>Classements</a>
+							<ul class="sous-menu">
+								<li><a href="Classement2022.html">2022</a></li>
+								<li><a href="Classement2023.html">2023</a></li>								
+							</ul>
+						</li>
+						<li><a href="Circuits.html">Circuits</a></li>
+						<li><a href="Légendes.html">Légendes</a></li>
+					</ul>
+				</div>
+			</nav>
+		<!-- Contenu principal -->
+			<main>
+				<h1 class="Titre"> Classement 2023</h1>
+						<table>
+							<tr> <th>Rang</th> <th>Nat</th> <th>Pilote</th> <th>Ecurie</th> <th>Points</th> </tr>
+							<tr> <td>1</td> <td> <img src="../img/PaysBas.png"></td> <td> <a href="https://www.formula1.com/en/drivers/max-verstappen.html">Max Verstappen</a> </td> <td>Red Bull</td> <td>0</td> </tr>
+							<tr> <td>2</td> <td> <img src="../img/Monaco.png"></td> <td><a href="https://www.formula1.com/en/drivers/charles-leclerc.html">Charles Leclerc</a></td> <td>Ferrari</td> <td>0</td> </tr>
+							<tr> <td>3</td> <td> <img src="../img/Mexique.png"></td> <td><a href="https://www.formula1.com/en/drivers/sergio-perez.html">Sergio Perez</a></td> <td>Red Bull</td> <td>0</td> </tr>
+							<tr> <td>4</td> <td> <img src="../img/RU.png"></td> <td><a href="https://www.formula1.com/en/drivers/george-russell.html">Georges Russel</a></td> <td>Mercedes</td> <td>0</td> </tr>
+							<tr> <td>5</td> <td> <img src="../img/Espagne.png"></td> <td><a href="https://www.formula1.com/en/drivers/carlos-sainz.html">Carlos Sainz</a></td> <td>Ferrari</td> <td>0</td> </tr>
+							<tr> <td>6</td> <td> <img src="../img/RU.png"></td> <td><a href="https://www.formula1.com/en/drivers/lewis-hamilton.html">Lewis Hamilton</a></td> <td>Mercedes</td> <td>0</td> </tr>
+							<tr> <td>7</td> <td> <img src="../img/RU.png"></td> <td><a href="https://www.formula1.com/en/drivers/lando-norris.html">Lando Norris</a></td> <td>McLaren</td> <td>0</td> </tr>
+							<tr> <td>8</td> <td> <img src="../img/France.png"></td> <td><a href="https://www.formula1.com/en/drivers/esteban-ocon.html">Esteban Ocon</a></td> <td>Alpine</td> <td>0</td> </tr>
+							<tr> <td>9</td> <td> <img src="../img/France.png"></td> <td><a href="https://www.formula1.com/en/drivers/pierre-gasly.html">Pierre Gasly</a></td> <td>Alpine</td> <td>0</td> </tr>
+							<tr> <td>10</td> <td> <img src="../img/Finlande.png"></td> <td><a href="https://www.formula1.com/en/drivers/valtteri-bottas.html">Valteri Bottas</a></td> <td>Alpha Romeo</td> <td>0</td> </tr>
+							<tr> <td>11</td> <td> <img src="../img/Australie.png"></td> <td><a href="https://www.formula1.com/en/drivers/oscar-piastri.html">Oscar Piastri</a></td> <td>McLaren</td> <td>0</td> </tr>
+							<tr> <td>12</td> <td> <img src="../img/Espagne.png"></td> <td><a href="https://www.formula1.com/en/drivers/fernando-alonso.html">Fernando Alonso</a></td> <td>Aston Martin</td> <td>0</td> </tr>
+							<tr> <td>13</td> <td> <img src="../img/Danemark.png"></td> <td><a href="https://www.formula1.com/en/drivers/kevin-magnussen.html">Kevin Magnussen</a></td> <td>Haas</td> <td>0</td> </tr>
+							<tr> <td>14</td> <td> <img src="../img/PaysBas.png"></td> <td><a href="https://www.formula1.com/en/drivers/nyck-de-vries.html">Nyck de Vries</a></td> <td>Alpha Tauri</td> <td>0</td> </tr>
+							<tr> <td>15</td> <td> <img src="../img/Canada.png"></td> <td><a href="https://www.formula1.com/en/drivers/lance-stroll.html">Lance Stroll</a></td> <td>Aston Martin</td> <td>0</td> </tr>
+							<tr> <td>16</td> <td> <img src="../img/Allemand.png"></td> <td><a href="https://www.formula1.com/en/drivers/nico-hulkenberg.html">Nico Hulkenberg</a></td> <td>Haas</td> <td>0</td> </tr>
+							<tr> <td>17</td> <td> <img src="../img/Japon.png"></td> <td><a href="https://www.formula1.com/en/drivers/yuki-tsunoda.html">yuki Tsunoda</a></td> <td>Alpha Tauri</td> <td>0</td> </tr>
+							<tr> <td>18</td> <td> <img src="../img/Chine.png"></td> <td><a href="https://www.formula1.com/en/drivers/guanyu-zhou.html">Guanyu Zhou</a></td> <td>Alpha Romeo</td> <td>0</td> </tr>
+							<tr> <td>19</td> <td> <img src="../img/Thailande.png"></td> <td><a href="https://www.formula1.com/en/drivers/alexander-albon.html">Alexander Albon</a></td> <td>Williams</td> <td>0</td> </tr>
+							<tr> <td>20</td> <td> <img height="30" width="35" src="../img/USA.png"></td> <td><a href="https://www.formula1.com/en/drivers/logan-sargeant.html">Logan Sargeant</a></td> <td>Williams</td> <td>0</td> </tr>
+						</table>
+			</main>
+		<!-- Informations annexes (réseaux sociaux) -->
+			<aside>
+				<div class="container-aside">
+					<ul>
+						<li><a href="./facebook.html"><img width="50" src="../img/logo-facebook.png" alt="Facebook"></a></li>
+						<li><a href="./instagram.html"><img width="50" src="../img/logo-instagram.png" alt="Instagram"></a></li>
+						<li><a href="./twitter.html"><img width="50" src="../img/logo-twitter.svg" alt="Twitter"></a></li>
+					</ul>		
+				</div>
+			</aside>
+		</div>	
+		<!-- Bas de page -->
+		<footer>
+			<div class="container-footer">
+				<div class="copyright">
+					Copyright &copy;
+				</div>
+				<div class="legal">
+					<ul>
+						<li>Politique de confidentialité </li>
+						<li>Politique d'utilisation des cookies </li>
+						<li>Mentions légales </li>
+						<li>Conditions générales d'utilisation </li>
+					</ul>			
+				</div>
+				<div class="author">
+					F1's Fan
+				</div>			
+			</div>
+		</footer>
+		
+	  <script>
+		navopen=0;
+
+		function openNav() {
+		var menubutton = document.getElementById("menubutton");
+		  if (navopen==0){
+			document.getElementById("navigation").style.width = "200px";
+			menubutton.setAttribute("src", "../img/bouton-menu-inverted.svg");
+			navopen=1;
+		  }
+		  else{
+			document.getElementById("navigation").style.width = "0px";
+			menubutton.setAttribute("src", "../img/bouton-menu.svg");
+			navopen=0;
+		  }
+		}
+		</script>
+  </body>
+
+</html>

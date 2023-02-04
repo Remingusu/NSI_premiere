@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>NSI à Jean Moulin</title>
+	<link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+		<!-- En-tête -->
+		<header class="page-header">
+			<div class="container-header">
+				<div class="header-gauche">
+					<!--  mettre à gauche -->
+					<img id="menubutton" height="50" src="../img/bouton-menu.svg" alt="Menu" style="padding-right: 10px" onclick="openNav()">
+					<a href="index.html"><img height="100" src="../img/logoJM.png" alt="Logo Jean Moulin"></a>
+				</div>
+				<div class="header-centre">
+					<!--  mettre au centre -->
+					<h1>F1</h1>
+					<h2>Sport Meca</h2>
+				</div>
+				<div class="header-droite">
+					<!-- mettre à droite -->
+					<form id="form-search" method="post" action="./search.html">
+						<label for="site-search"> </label> <input type="search" id="site-search" name="recherche-site" placeholder="Recherche">
+						<button type="submit" id="button-search"><img id="searchButtonImg" height="20" src="../img/loupe.svg" alt="Recherche"></button>
+					</form>
+				</div>
+			</div>
+		</header>
+		<div class="container-main">
+		<!-- Navigation -->
+			<nav>
+				<div  id="navigation" class="container-nav">
+					<ul>
+						<li><a href="presentation.html">Présentation</a></li>
+						<li class="deroulant"><a href="cours.html">Classements</a>
+							<ul class="sous-menu">
+								<li><a href="1NSI.html">2022</a></li>
+								<li><a href="TNSI.html">2023</a></li>								
+							</ul>
+						</li>
+						<li><a href="activites.html">Circuits</a></li>
+						<li><a href="contact.html">Légendes</a></li>
+					</ul>
+				</div>
+			</nav>
+		<!-- Contenu principal -->
+			<main>
+				<h1 class="Titre"> Classement 2022</h1>
+						<table>
+							<tr> <th>Rang</th> <th>Nat</th> <th>Pilote</th> <th>Ecurie</th> <th>Points</th> </tr>
+							<tr> <td>1</td> <td> <img src="../img/PaysBas.png"></td> <td>Max Verstappen</td> <td>Red Bull</td> <td>454</td> </tr>
+							<tr> <td>2</td> <td> <img src="../img/Monaco.png"></td> <td>Charles Leclerc</td> <td>Ferrari</td> <td>308</td> </tr>
+							<tr> <td>3</td> <td> <img src="../img/Mexique.png"></td> <td>Sergio Perez</td> <td>Red Bull</td> <td>305</td> </tr>
+							<tr> <td>4</td> <td> <img src="../img/RU.png"></td> <td>Georges Russel</td> <td>Mercedes</td> <td>275</td> </tr>
+							<tr> <td>5</td> <td> <img src="../img/Espagne.png"></td> <td>Carlos Sainz</td> <td>Ferrari</td> <td>246</td> </tr>
+							<tr> <td>6</td> <td> <img src="../img/RU.png"></td> <td>Lewis Hamilton</td> <td>Mercedes</td> <td>240</td> </tr>
+							<tr> <td>7</td> <td> <img src="../img/RU.png"></td> <td>Lando Norris</td> <td>McLaren</td> <td>122</td> </tr>
+							<tr> <td>8</td> <td> <img src="../img/France.png"></td> <td>Esteban Ocon</td> <td>Alpine</td> <td>92</td> </tr>
+							<tr> <td>9</td> <td> <img src="../img/Espagne.png"></td> <td>Fernando Alonzo</td> <td>Alpine</td> <td>81</td> </tr>
+							<tr> <td>10</td> <td> <img src="../img/Finlande.png"></td> <td>Valteri Bottas</td> <td>Alpha Romeo</td> <td>49</td> </tr>
+							<tr> <td>11</td> <td> <img src="../img/Australie.png"></td> <td>Daniel Ricciardo</td> <td>McLaren</td> <td>37</td> </tr>
+							<tr> <td>12</td> <td> <img src="../img/Allemand.png"></td> <td>Sebastian Vettel</td> <td>Aston Martin</td> <td>37</td> </tr>
+							<tr> <td>13</td> <td> <img src="../img/Danemark.png"></td> <td>Kevin Magnussen</td> <td>Haas</td> <td>25</td> </tr>
+							<tr> <td>14</td> <td> <img src="../img/France.png"></td> <td>Pierre Gasly</td> <td>Alpha Tauri</td> <td>23</td> </tr>
+							<tr> <td>15</td> <td> <img src="../img/Canada.png"></td> <td>Lance Stroll</td> <td>Aston Martin</td> <td>18</td> </tr>
+							<tr> <td>16</td> <td> <img src="../img/Allemand.png"></td> <td>Mick Schumacher</td> <td>Haas</td> <td>12</td> </tr>
+							<tr> <td>17</td> <td> <img src="../img/Japon.png"></td> <td>yuki Tsunoda</td> <td>Alpha Tauri</td> <td>12</td> </tr>
+							<tr> <td>18</td> <td> <img src="../img/Chine.png"></td> <td>Guanyu Zhou</td> <td>Alpha Romeo</td> <td>6</td> </tr>
+							<tr> <td>19</td> <td> <img src="../img/Thailande.png"></td> <td>Alexander Albon</td> <td>Williams</td> <td>4</td> </tr>
+							<tr> <td>20</td> <td> <img src="../img/Canada.png"></td> <td>Nicolas Latifi</td> <td>Williams</td> <td>2</td> </tr>
+							<tr> <td>21</td> <td> <img src="../img/PaysBas.png"></td> <td>Nick de Vries</td> <td>Williams</td> <td>2</td> </tr>
+							<tr> <td>22</td> <td> <img src="../img/Allemand.png"></td> <td>Nico Hulkenberg</td> <td>Aston Martin</td> <td>0</td> </tr>
+						</table>
+			</main>
+		<!-- Informations annexes (réseaux sociaux) -->
+			<aside>
+				<div class="container-aside">
+					<ul>
+						<li><a href="./facebook.html"><img width="50" src="../img/logo-facebook.png" alt="Facebook"></a></li>
+						<li><a href="./instagram.html"><img width="50" src="../img/logo-instagram.png" alt="Instagram"></a></li>
+						<li><a href="./twitter.html"><img width="50" src="../img/logo-twitter.svg" alt="Twitter"></a></li>
+					</ul>		
+				</div>
+			</aside>
+		</div>	
+		<!-- Bas de page -->
+		<footer>
+			<div class="container-footer">
+				<div class="copyright">
+					Copyright &copy;
+				</div>
+				<div class="legal">
+					<ul>
+						<li>Politique de confidentialité </li>
+						<li>Politique d'utilisation des cookies </li>
+						<li>Mentions légales </li>
+						<li>Conditions générales d'utilisation </li>
+					</ul>			
+				</div>
+				<div class="author">
+					F1's Fan
+				</div>			
+			</div>
+		</footer>
+		
+	  <script>
+		navopen=0;
+
+		function openNav() {
+		var menubutton = document.getElementById("menubutton");
+		  if (navopen==0){
+			document.getElementById("navigation").style.width = "200px";
+			menubutton.setAttribute("src", "../img/bouton-menu-inverted.svg");
+			navopen=1;
+		  }
+		  else{
+			document.getElementById("navigation").style.width = "0px";
+			menubutton.setAttribute("src", "../img/bouton-menu.svg");
+			navopen=0;
+		  }
+		}
+		</script>
+  </body>
+
+</html>
