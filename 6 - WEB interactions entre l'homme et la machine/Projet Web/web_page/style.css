@@ -63,20 +63,25 @@ nav li{
 }
 
 .main_index{
-    margin: 30px;
+    min-height: 830px;
+    margin: 20px;
+    display: grid;
+    justify-content: center;
 }
 
-main .fieldset{
-    display: flex;
+.fieldset {
+    width: 600px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     justify-content: center;
-    align-items: center;
+    display: grid;
+    border-radius: 50px;
+    background-color: #ff3c00;
 }
 
 fieldset {
-    margin-top: 50px;
-    margin-left: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
+    height: 56.59px;
+    width: 400px;
     text-align: center;
     background-color: #EEEEEE;
     border-color: #8a1212;
@@ -286,13 +291,64 @@ select {
     background-color: rgba(255, 255, 255, 0);
 }
 
-input[type="submit"]{
+.submitButton{
     padding-top:10px;
     margin-top: 30px;
     border: solid #005cb8;
     background-color: #00b8b895;
 }
 
+.submitButtonOver {
+    padding-top:10px;
+    margin-top: 30px;
+    border: solid #5f00b8;
+    background-color: #b8007295;
+}
+
 select {
     background-color: rgba(0, 0, 0);
+}
+
+.all_box {
+    margin: 215px;
+}
+
+.encouragement_result {
+    min-height: 850px;
+    padding: 20px 5px 20px 5px;
+    margin: 10px 5px 10px 5px;
+    border-radius: 10px;
+    background-color: #ffffff8e;
+    text-align: center;
+}
+
+.email_result {
+    border-radius: 15px;
+    padding: 5px 0px 18px 0px;
+    color: #ffffff;
+    background-color: #000000ab;
+}
+
+.email_result i  {
+    color: #00c3ff;
+}
+
+.driver_result {
+    border-radius: 15px;
+    margin-top: 10px;
+    padding: 5px 0px 18px 0px;
+    color: #ffffff;
+    background-color: #000000ab;
+}
+
+.driver_result b {
+    color: #d43ecd;
+}
+
+.text_result {
+    border-radius: 15px;
+    margin-top: 10px;
+    padding: 5px 0px 18px 0px;
+    color: #ffffff;
+    background-color: #000000ab;
 }

@@ -30,15 +30,15 @@
                         <h3>Envoyez vos encouragements à votre pilote favori !</h3>
                     </div>
                     <div class="form_div">
-                        <form id="formulaire " class="formulaire">
-                            <input type="email" id="email" placeholder="E-Mail" required><br>
+                        <form name="formulaire " class="formulaire">
+                            <input type="email" name="email" placeholder="E-Mail" required><br>
                             <div class="color_div">
                                 <p>Choisissez la couleur du texte:</p>
-                                <input type="color" id="color" required><br>
+                                <input type="color" name="color" required><br>
                             </div>
                             <div class="driver_div">
                                 <p>Choisissez votre pilote:</p>
-                                <select name="driver" id="driver_select">
+                                <select name="driver" name="driver_select">
                                     <option value="Verstappen">Verstappen</option>
                                     <option value="Leclerc">Leclerc</option>
                                     <option value="Perez">Perez</option>
@@ -61,13 +61,14 @@
                                     <option value="Sargeant">Sargeant</option>
                                 </select><br>
                             </div>
-                            <input type="text" id="message" placeholder="Vos Encouragements" required><br>
-                            <input type="submit" id="send" value="Envoyer les Encouragements !">
+                            <input type="text" name="message" placeholder="Vos Encouragements" required><br>
+                            <input type="submit" id="submitButton" class="submitButton" formaction="encouragement_result.html" formmethod="get" value="Envoyer les Encouragements !">
                         </form>
                     </div>
                 </div>
             </div>
         </main>
     </div>
+    <script src="JavaScript/button_style_change.js"></script>
 </body>
 </html>
