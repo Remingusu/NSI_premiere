@@ -352,3 +352,33 @@ select {
     color: #ffffff;
     background-color: #000000ab;
 }
+
+.table_circuit {
+    background-color: #00000077;
+    border-radius: 10px;
+    margin: 5px 15px 5px 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.table_circuit button {
+    padding-left: 30px;
+    padding-right: 30px; 
+    background-color: #88888870;
+    border-radius: 30px;
+    border: hidden;
+}
+
+.table_circuit h2 {
+    color: #ffffff;
+}
+
+.table_circuit h3 {
+    color: #ff5d5d
+}
+
+.table_circuit table {
+    border: #000000 solid 2px;
+    color: #06b699;
+}
