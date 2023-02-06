@@ -69,27 +69,19 @@ nav li{
     justify-content: center;
 }
 
-.fieldset {
-    width: 600px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    justify-content: center;
-    display: grid;
-    border-radius: 50px;
-    background-color: #ff3c00;
-}
-
 fieldset {
-    height: 56.59px;
-    width: 400px;
+    width: 553px;
+    background: linear-gradient(150deg, #b61111 68%, #000000 55%);
     text-align: center;
-    background-color: #EEEEEE;
-    border-color: #8a1212;
-    border-radius: 10px;
-    border-style: double solid solid dashed;
-    border-width: 3px;
+    border-radius: 25px;
+    border: hidden;
 }
 
+legend {
+    font-style: italic;
+    text-decoration: underline;
+    color: #000000;
+}
 
 .main_container {
     background-image: url('Images/background.jpg');
