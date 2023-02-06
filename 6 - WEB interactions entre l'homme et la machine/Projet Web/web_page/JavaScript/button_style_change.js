@@ -1,9 +1,9 @@
 function enterButtonStyle() {
-    submitButton.classList.replace("submitButton", "submitButtonOver");
+    submitButton.classList.replace("submitButtonOver", "submitButton");
 }
 
 function leaveButtonStyle() {
-    submitButton.classList.replace("submitButtonOver", "submitButton");
+    submitButton.classList.replace("submitButton", "submitButtonOver");
 }
 
 var submitButton = document.getElementById('submitButton');
