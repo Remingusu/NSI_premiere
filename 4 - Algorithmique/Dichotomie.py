@@ -1,13 +1,29 @@
-L = [27, 15, 10, 7, 5, 12, 4, 17, 20, 2, 31]
+import random as rdm
+
+L = rdm.sample([p for p in range(1, 1024)], 64)
 
 
 def parcours(L, val):
+    L.sort()
+    cp = 0
+    i = 0
+    loop = True
+    while loop:
+        if val == L[i]:
+            loop = False
+        cp += 1
+        i += 1
+    return i-1, cp
+
+
+def dichotomie(L, val):
     L.sort()
     i_min = 0
     i_max = len(L)
     i_milieu = (i_min + i_max) // 2
     coup = 0
-    while L[i_milieu] != val or i_milieu != 0:
+    while L[i_milieu] != val and i_milieu != 0:
+        print("loop")
         if L[i_milieu] > val:
             i_max = i_milieu + 1
         else:
@@ -17,6 +33,15 @@ def parcours(L, val):
     return i_milieu, coup
 
 
-return_value = parcours(L, 1)
-print(f"L'indice du nombre est {return_value[0]}. "
-      f"Il a été trouvé en {return_value[1]} coups.")
+L.sort()
+print(L)
+
+val = int(input("Valeur recherchée: "))
+
+result = parcours(L, val)
+print(f"L'indice du nombre est {result[0]}. "
+      f"Il a été trouvé en {result[1]} coups.\n")
+
+result_dicho = dichotomie(L, val)
+print(f"L'indice du nombre est {result_dicho[0]}. "
+      f"Il a été trouvé en {result_dicho[1]} coups.")
