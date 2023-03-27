@@ -1,0 +1,9 @@
+﻿body {
+    font-family: Arial;
+    background: #f1f1f1;
+}
+h1{
+    color:brown;
+}
+.button_style {width: 30%;
+              height: 30%;}
