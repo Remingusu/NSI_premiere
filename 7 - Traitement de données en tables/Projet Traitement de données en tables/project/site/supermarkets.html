@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6ae83bf8953585a41852a666725fb3bd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6ae83bf8953585a41852a666725fb3bd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6ae83bf8953585a41852a666725fb3bd = L.map(
+                "map_6ae83bf8953585a41852a666725fb3bd",
+                {
+                    center: [47.471646, -0.551846],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    zoomStrat: 13,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_75a5bb1a94185d16169a0e85510aecd4 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6ae83bf8953585a41852a666725fb3bd);
+        
+    
+            var marker_47dce460df9aefc4bdfa75aecc5f9be3 = L.marker(
+                [47.473652, -0.566641],
+                {}
+            ).addTo(map_6ae83bf8953585a41852a666725fb3bd);
+        
+    
+            var icon_bd9b8a05d5beb6c3124ed9c56b479a09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_47dce460df9aefc4bdfa75aecc5f9be3.setIcon(icon_bd9b8a05d5beb6c3124ed9c56b479a09);
+        
+    
+        var popup_141eff070b6b5c10d3ab4cc1c1b1c7fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_619cac3f9f3ff06b712bdf433d85b9fb = $(`<div id="html_619cac3f9f3ff06b712bdf433d85b9fb" style="width: 100.0%; height: 100.0%;">Supermarché</div>`)[0];
+                popup_141eff070b6b5c10d3ab4cc1c1b1c7fc.setContent(html_619cac3f9f3ff06b712bdf433d85b9fb);
+            
+        
+
+        marker_47dce460df9aefc4bdfa75aecc5f9be3.bindPopup(popup_141eff070b6b5c10d3ab4cc1c1b1c7fc)
+        ;
+
+        
+    
+    
+            var marker_e833915c99935c09600b5069a1e257fe = L.marker(
+                [47.460003, -0.537143],
+                {}
+            ).addTo(map_6ae83bf8953585a41852a666725fb3bd);
+        
+    
+            var icon_85be04158064cd7cd342cc22a3d1b3e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e833915c99935c09600b5069a1e257fe.setIcon(icon_85be04158064cd7cd342cc22a3d1b3e7);
+        
+    
+        var popup_564a79da7b51911a2db7b4746a4a8eea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77fa112c8c010f66ed550c7ed750c1ce = $(`<div id="html_77fa112c8c010f66ed550c7ed750c1ce" style="width: 100.0%; height: 100.0%;">Supermarché</div>`)[0];
+                popup_564a79da7b51911a2db7b4746a4a8eea.setContent(html_77fa112c8c010f66ed550c7ed750c1ce);
+            
+        
+
+        marker_e833915c99935c09600b5069a1e257fe.bindPopup(popup_564a79da7b51911a2db7b4746a4a8eea)
+        ;
+
+        
+    
+    
+            var marker_740945d027c6dab1438153d864c50459 = L.marker(
+                [47.482898, -0.52655],
+                {}
+            ).addTo(map_6ae83bf8953585a41852a666725fb3bd);
+        
+    
+            var icon_7604d68bf9b5e0ceca56407474eba437 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_740945d027c6dab1438153d864c50459.setIcon(icon_7604d68bf9b5e0ceca56407474eba437);
+        
+    
+        var popup_74708ec88385ec56999669ea9e51506e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f3deeb714a2f0d2bacd4d13c11a6901 = $(`<div id="html_9f3deeb714a2f0d2bacd4d13c11a6901" style="width: 100.0%; height: 100.0%;">Supermarché</div>`)[0];
+                popup_74708ec88385ec56999669ea9e51506e.setContent(html_9f3deeb714a2f0d2bacd4d13c11a6901);
+            
+        
+
+        marker_740945d027c6dab1438153d864c50459.bindPopup(popup_74708ec88385ec56999669ea9e51506e)
+        ;
+
+        
+    
+    
+            var marker_71144378080fea0cb158a02712ab1c2d = L.marker(
+                [47.451315, -0.548814],
+                {}
+            ).addTo(map_6ae83bf8953585a41852a666725fb3bd);
+        
+    
+            var icon_e56e6321b376b2944b127572fdffa44a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_71144378080fea0cb158a02712ab1c2d.setIcon(icon_e56e6321b376b2944b127572fdffa44a);
+        
+    
+        var popup_35a140cacceb76f92997cc12e426d32e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d8c01c728e534702f6d599297cf7064a = $(`<div id="html_d8c01c728e534702f6d599297cf7064a" style="width: 100.0%; height: 100.0%;">Supermarché</div>`)[0];
+                popup_35a140cacceb76f92997cc12e426d32e.setContent(html_d8c01c728e534702f6d599297cf7064a);
+            
+        
+
+        marker_71144378080fea0cb158a02712ab1c2d.bindPopup(popup_35a140cacceb76f92997cc12e426d32e)
+        ;
+
+        
+    
+    
+            var marker_0c45c943163c61b7806e34b26fa1a18b = L.marker(
+                [47.464465, -0.55629],
+                {}
+            ).addTo(map_6ae83bf8953585a41852a666725fb3bd);
+        
+    
+            var icon_c213c1d8585c28532555459df4d36adc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0c45c943163c61b7806e34b26fa1a18b.setIcon(icon_c213c1d8585c28532555459df4d36adc);
+        
+    
+        var popup_305276fc48cb6092bf96a1477417969a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_569d7da03fe74ef411c40a0029ca5a03 = $(`<div id="html_569d7da03fe74ef411c40a0029ca5a03" style="width: 100.0%; height: 100.0%;">Supermarché</div>`)[0];
+                popup_305276fc48cb6092bf96a1477417969a.setContent(html_569d7da03fe74ef411c40a0029ca5a03);
+            
+        
+
+        marker_0c45c943163c61b7806e34b26fa1a18b.bindPopup(popup_305276fc48cb6092bf96a1477417969a)
+        ;
+
+        
+    
+</script>
+</html>

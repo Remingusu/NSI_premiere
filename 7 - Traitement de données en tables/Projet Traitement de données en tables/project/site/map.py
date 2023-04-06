@@ -10,10 +10,8 @@ def fabricationCarte(fichier):
         for ligne in file:
             nom, departement, lat, long, type_mag = ligne.strip().split(";")
             if departement == 'Maine et Loire' and type_mag == 'Centre commercial':
-                print("hi2")
                 folium.Marker([float(lat), 0 - float(long)], popup="Centre commercial", icon=folium.Icon(color="blue")).add_to(carte1)
-            if departement == 'Maine et loire' and type_mag == 'Supermarche':
-                print("hi3")
+            if departement == 'Maine et Loire' and type_mag == 'Supermarché':
                 folium.Marker([float(lat), 0 - float(long)], popup="Supermarché", icon=folium.Icon(color="red")).add_to(carte2)
         carte1.save('centre_commerciaux.html')
         carte2.save('supermarkets.html')
@@ -26,24 +24,24 @@ def page_html(file):
     with open(file, 'w', encoding='utf-8') as html_file:
         html_file.write(f"""
 <!DOCTYPE html>
-<html>
 <head>
     <link rel="stylesheet" href="style.css">
     <title>Magasins sur Angers</title>
 </head>
+<html>
 <body>
     <header>
         <div class="title">Magasins Angevins</div>
     </header>
     <main>
-        <iframe src="centre_commerciaux.html" height="700" width="1000"></iframe><br>
-        <iframe src="supermarkets.html" height="700" width="1000"></iframe>
+        <iframe id="map" src="centre_commerciaux.html" frameborder="0" height="700" width="1000"></iframe><br>
+        <button id="btn-1">BT1</button>
+        <button id="btn-2">BT2</button>
     </main>
-    <script>
-        // Script for number of markets
-    </script>
+    <script src="id.js"></script>
 </body>
 </html>
+
 """)
 
 
