@@ -33,7 +33,7 @@ fabricationCarte("France-scolaire.csv")
 
 def page_html(fichier):
     with open(fichier, 'w', encoding='utf-8') as file:
-        file.write("""
+        file.write(f"""
         <!DOCTYPE html>
         <head>
             <title>Lycée angevins</title>
