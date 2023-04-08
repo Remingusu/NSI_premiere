@@ -13,10 +13,10 @@ def fabricationCarte(fichier):
             nom, departement, lat, long, type_mag = ligne.strip().split(";")
             if departement == 'Maine et Loire' and type_mag == 'Centre commercial':
                 cc += 1
-                folium.Marker([float(lat), 0 - float(long)], popup=nom + "- Centre commercial", icon=folium.Icon(color="blue")).add_to(carte1)
+                folium.Marker([float(lat), 0 - float(long)], popup=nom, icon=folium.Icon(color="blue")).add_to(carte1)
             if departement == 'Maine et Loire' and type_mag == 'Supermarché':
                 sm += 1
-                folium.Marker([float(lat), 0 - float(long)], popup=nom + "- Supermarché", icon=folium.Icon(color="red")).add_to(carte2)
+                folium.Marker([float(lat), 0 - float(long)], popup=nom, icon=folium.Icon(color="red")).add_to(carte2)
         carte1.save('centre_commerciaux.html')
         carte2.save('supermarkets.html')
     return cc, sm
