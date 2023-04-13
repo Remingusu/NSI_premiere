@@ -40,7 +40,7 @@ def page_html(file, cc, sm):
     </header>
     <main>
         <div class="carte_boutons">
-            <p class="title-j">Nombre de Centres commerciaux: 8<br>Nombre de Supermarchés: 5</p>
+            <p class="title-j">Nombre de Centres commerciaux: """ + str(cc) + """<br>Nombre de Supermarchés: """ + str(sm) + """</p>
             <iframe id="map" src="centre_commerciaux.html" frameborder="0" height="650" width="1000"></iframe><br>
             <button id="btn-1" class="bouton">Centres Commerciaux</button>
             <button id="btn-2" class="bouton">Supermarchés</button>

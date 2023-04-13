@@ -1,0 +1,63 @@
+body {
+    background-color: #BFF871;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-family: 'M PLUS 1 Code', sans-serif;
+    font-size: 35px;
+    background-color: black;
+    background-image: linear-gradient(to left, #019ca7 0 40%, #00c6d4 60% 100%);
+    background-size: 0;
+    color: white;
+    height: 50px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    border-bottom-left-radius: 35%;
+    border-bottom-right-radius: 35%;
+    transition: .5s;
+    background-repeat: no-repeat;	
+}
+
+.title:hover {
+    color: black;
+    background-size: 100%;
+    transition: .5s;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.carte_boutons{
+	display:flex;
+	align-items:center;
+}
+
+.bouton{
+	border-radius: 50px;
+	border: none;
+	color: white;
+	background-color: black;
+	transition: .5s;
+    background-repeat: no-repeat;
+}
+
+.bouton:hover {
+    color: black;
+	background-image: linear-gradient(to left, #019ca7 0 40%, #00c6d4 60% 100%);
+    background-size: 100%;
+    transition: .5s;
+}
+
+.title-j{	
+	font-family: 'M PLUS 1 Code', sans-serif;
+	font-size: 18px;
+	text-align: center;	
+	color: black;
+}
+	
+	
+	
