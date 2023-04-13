@@ -11,12 +11,28 @@
     </header>
     <main>
         <div class="carte_boutons">
-            <p id="text">Nombre de Centres commerciaux: 8<br>Nombre de Supermarchés: 5</p>
-            <iframe id="map" src="centre_commerciaux.html" frameborder="0" height="700" width="1000"></iframe><br>
-            <button id="btn-1">Centres Commerciaux</button>
-            <button id="btn-2">Supermarchés</button>
+            <p class="title-j">Nombre de Centres commerciaux: 8<br>Nombre de Supermarchés: 5</p>
+            <iframe id="map" src="centre_commerciaux.html" frameborder="0" height="650" width="1000"></iframe><br>
+            <button id="btn-1" class="bouton">Centres Commerciaux</button>
+            <button id="btn-2" class="bouton">Supermarchés</button>
         </div>
     </main>
-    <script src="id.js"></script>
+    <script>
+    var button1 = document.getElementById('btn-1');
+var button2 = document.getElementById('btn-2');
+var Carte = document.getElementById('map');
+
+button1.addEventListener("click",generercarte1);
+
+button2.addEventListener("click",generercarte2);
+
+function generercarte1(){
+	Carte.setAttribute('src','centre_commerciaux.html');
+}
+
+function generercarte2(){
+	Carte.setAttribute('src','supermarkets.html');
+}
+    </script>
 </body>
 </html>
