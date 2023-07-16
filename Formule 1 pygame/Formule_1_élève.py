@@ -35,28 +35,31 @@ def Formule_1():
         pygame.display.update()
 
         for event in pygame.event.get():  # écoute des touches appuyées
-            print('?')
+            if event.type == QUIT:
+                pygame.quit()
         touche = pygame.key.get_pressed()
 
         if touche[K_UP] and yF1 >= 50:  # touche "flèche haut" → faire "monter" la voiture
-            yF1 = yF1 - 25
-        elif ...:  # touche "flèche bas" → faire "descendre" la voiture
-            ...
+            yF1 -= 20
+        elif touche[K_DOWN] and yF1 <= 1000:  # touche "flèche bas" → faire "descendre" la voiture
+            yF1 += 20
 
-        xRoute = xRoute - 40  # -10 : lent
+        xRoute -= 100  # -10 : lent
 
-        if -3200 < xRoute < (-3200 + 2 * 700) and 20 < yF1 < (
-                274 + 20):  # zone de collision voiture 1 sur Route_0, il faut compter la largeur de 2 F1
+        if -3200 < xRoute < (-3200 + 2 * 700) and 20 < yF1 < (274 + 20):
+            # zone de collision voiture 1 sur Route_0, il faut compter la largeur de 2 F1
             collision = True
-        elif ...:  # zone de collision voiture 2 de Route_0, il faut compter la largeur de 2 F1
-            ...
-        elif ...:  # zone de collision voiture 3 sur Route_0, il faut compter la hauteur de 2 F1
-            ...
+        elif -5100 < xRoute < (-5100 + 2 * 700) and 20 < yF1 < (274 + 20):
+            # zone de collision voiture 2 de Route_0, il faut compter la largeur de 2 F1
+            collision = True
+        elif -7750 < xRoute < (-7750 + 2 * 700) and (1060 - 274) < yF1+274 < 1060:
+            # zone de collision voiture 3 sur Route_0, il faut compter la hauteur de 2 F1
+            collision = True
 
         elif xRoute < -8500:  # extrémité de la route atteinte : 8500pix + largeur écran = 10000pix
-            score = ...
-            vies = ...  # +2 vies, car ensuite collision=True -> vie=vie-1
-            collision = ...
+            score += 1
+            vies += 2  # +2 vies, car ensuite collision=True -> vie=vie-1
+            collision = True
 
         if collision:  # en cas de collision, le score n'augmente pas et on perd une vie
             vies -= 1
@@ -74,9 +77,9 @@ def Formule_1():
 
         if score == 3:  # gagné
             GameOver = True
-            ...
-            ...
-            ...
+            screen.blit(FondGagne, (0, 0))
+            pygame.display.update()
+            pygame.time.wait(2000)
 
 
 vies = 1  # pour permettre à vies de repartir à 1 à chaque fois que la fonction Formule_1() est appelée
